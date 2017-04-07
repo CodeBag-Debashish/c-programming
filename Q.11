@@ -1,0 +1,15 @@
+Q.11
+
+Suppose the slots are full -> F = 0. Now, if Wait(F) and Wait(S) are interchanged and Wait(S) succeeds, The producer will wait for Wait(F) which is never going to succeed as Consumer would be waiting for Wait(S). So, deadlock can happen.
+
+If Signal(S) and Signal(F) are interchanged in Consumer, deadlock won't happen. It will just give priority to a producer compared to the next consumer waiting. 
+
+So, answer (A)
+
+
+Q12.
+
+
+if no process is executing in its critical section and there exists some processes that wish to enter their critical sections, then only those processes that are not executing in their remainder section can participate in the decision of which will enter its critical section next, and this decision cannot be postponed indefinitely
+if no process is in critical section, can decide quickly who enters
+only one process can enter the critical section so in practice, others are put on the queue

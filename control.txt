@@ -1,0 +1,1 @@
+while converting time domain to freqency domain why we choose sinusoid ? In other words while doing fourier transform sin/cos terms are introduced ? why not some other simple periodic functions like square/sawtooth ?
